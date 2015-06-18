@@ -17,6 +17,8 @@
 .nav-main__select {
 	@extend %roboto_regular;
 	@extend %clarat_rounding_end;
+	z-index: 200;
+
 	display: inline-block;
 	margin-left: px2em(15px, 18px);
 	padding: 0 px2em(10px, 18px);

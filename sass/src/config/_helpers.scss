@@ -1,0 +1,37 @@
+%clearfix,
+.clearfix {
+	zoom:1;
+
+	&:before, &:after {
+		content: "";
+		display: block;
+		height: 0;
+		overflow: hidden;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+%hide_text {
+	text-indent: -9999em;
+	text-shadow: none;
+	color: transparent;
+}
+
+%clarat_rounding {
+	border-radius: $border_radius 0;
+}
+
+%clarat_rounding_start {
+	border-top-left-radius: $border_radius;
+}
+
+%clarat_rounding_end {
+	border-bottom-right-radius: $border_radius;
+}
+
+.is-hidden {
+	display: none;
+}

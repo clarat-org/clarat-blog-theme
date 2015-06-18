@@ -1,0 +1,9 @@
+@include breakpoint(XS) {
+
+	$base-font_size: 12px;
+
+	body {
+		font-size: $base-font_size;
+	}
+
+}

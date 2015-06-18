@@ -1,0 +1,112 @@
+// ---------------------------------------------------------------
+//
+//  Module
+//
+// ---------------------------------------------------------------
+
+.comment-list {
+	counter-reset: li;
+	font-size: px2em(14px);
+
+	&,
+	li {
+		position: relative;
+		margin: 0 0 px2em(25px);
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		padding-top: px2em(14px);
+		padding-bottom: px2em(14px);
+		border-top: 1px solid $brand_white;
+
+		&.comment.parent,
+		&.comment:last-child {
+			padding-bottom: 0;
+		}
+
+		&:before {
+			@extend %robotoslab_regular;
+			position: absolute;
+			right: 0;
+			color: $brand_white;
+			content: counter(li);
+			counter-increment: li;
+			font-size: px2em(48px);
+		}
+
+		&.depth-1:first-child {
+			padding-top: 0;
+			border-top: none;
+		}
+	}
+
+	h3 {
+		@extend %robotoslab_bold;
+		margin-top: 0;
+		margin-bottom: .45em;
+		color: $brand_brown;
+		font-weight: 400;
+		font-size: px2em(20px);
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+
+	p {
+		margin: 0 0 .7em;
+		padding: 0 px2em(55px) 0 0;
+		line-height: 1.68;
+	}
+
+}
+
+.comment-form {
+	label {
+		display: block;
+	}
+}
+
+.comment__body {
+	padding-bottom: px2em(20px);
+
+}
+
+.comment-list__timestamp,
+.comment-list__replyhere {
+	@extend %robotoslab_regular;
+	padding-left: px2em(2px, 11px);
+	color: $brand_blue;
+	font-size: px2em(11px);
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+
+.comment-form .submit,
+.comment-list__btn {
+	@extend %roboto_bold;
+	@extend %clarat_rounding_start;
+	@extend  %clarat_rounding_end;
+	padding: px2em(8px, 16px) px2em(18px, 16px) px2em(10px, 16px);
+	border: none;
+	background: $brand_yellow;
+	color: #fff;
+	font-size: px2em(16px);
+	line-height: 1;
+	cursor: pointer;
+}
+
+.comment-respond {
+	margin-top: px2em(15px);
+}
+
+.form-allowed-tags {
+	font-size: 72%;
+}

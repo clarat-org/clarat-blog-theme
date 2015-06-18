@@ -1,0 +1,19 @@
+@include breakpoint(M) {
+
+	$base-font_size: 14px;
+
+	body {
+		font-size: $base-font_size;
+	}
+
+	.header-main {
+		background: transparent;
+	}
+
+	.wrapper-main {
+		margin: 0 px2em(20px, $base-font_size);
+		max-width: 100%;
+	}
+
+
+}

@@ -1,0 +1,24 @@
+// ---------------------------------------------------------------
+//
+//  Module
+//
+// ---------------------------------------------------------------
+
+.screen-reader-text {
+	display: none;
+}
+
+.posts-navigation {
+	@extend %robotoslab_bold;
+	background: $brand_beige;
+	margin-top: px2em(35px);
+	padding: px2em(15px) px2em(20px);
+
+	a {
+		color: $brand_brown;
+	}
+
+	.nav-next {
+		text-align: right;
+	}
+}

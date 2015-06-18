@@ -1,0 +1,29 @@
+$m: $main_container_width + 48px;
+$l: $main_container_width + 260px;
+
+@mixin breakpoint($point) {
+
+	@if $point == L {
+		@media (min-width: $l) { @content; }
+	}
+
+	@if $point == M {
+		@media (max-width: $m) { @content; }
+	}
+
+	@if $point == S {
+		@media (max-width: 720px) { @content; }
+	}
+
+	@if $point == XS {
+		@media (max-width: 480px) { @content; }
+	}
+}
+
+@import "_l";
+@import "_m";
+@import "_s";
+@import "_xs";
+
+
+

@@ -1,0 +1,49 @@
+// ---------------------------------------------------------------
+//
+//  Tab
+//
+// ---------------------------------------------------------------
+
+.tab {
+	margin: px2em(50px) 0 px2em(25px);
+}
+
+.tab__navigation {
+	@extend %clearfix;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		border: 1px solid $brand_beige;
+		border-bottom: none;
+		float: left;
+		display: inline-block;
+		font-size: px2em(14px);
+		text-transform: uppercase;
+
+		&:first-child {
+			@extend %clarat_rounding_start;
+			border-right-width: 0;
+		}
+
+		a {
+			@extend %roboto_bold;
+			display: block;
+			color: $brand_brown;
+			padding: px2em(20px,16px) px2em(40px, 16px);
+			text-decoration: none;
+		}
+
+		&.active {
+			background: $brand_beige;
+		}
+	}
+}
+
+.tab__content {
+	@extend %clarat_rounding_end;
+	border: 1px solid $brand_beige;
+  	padding: px2em(35px);
+	background: $brand_beige;
+}

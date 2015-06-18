@@ -1,0 +1,29 @@
+.wrapper-main {
+	position: relative;
+	margin: 0 auto;
+	max-width: px2em($main_container_width);
+}
+
+.content-main {
+	@extend %clarat_rounding_start;
+	@extend %clarat_rounding_end;
+	margin-bottom: px2em(145px, 18px);
+	padding: px2em(40px, 18px) px2em(50px, 18px);
+	background: rgba($brand_white, .9);
+	font-size: px2em(18px);
+	line-height: 1.65;
+
+	a {
+		color: inherit;
+	}
+}
+
+.overview-filtered__headline {
+	margin: 0;
+	color: $brand_blue
+}
+
+.page-headline {
+	font-weight: 300;
+	color: $brand_blue;
+}

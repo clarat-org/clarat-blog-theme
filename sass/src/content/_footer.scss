@@ -1,0 +1,10 @@
+.footer-main {
+  @extend %roboto_bold;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  min-height: px2em(30px);
+  background: $brand_yellow;
+  color: #fff;
+
+}

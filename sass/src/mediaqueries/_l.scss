@@ -1,0 +1,8 @@
+@include breakpoint(L) {
+
+	$base-font_size: 18px;
+
+	body {
+		font-size: $base-font_size;
+	}
+}

@@ -1,0 +1,52 @@
+// ---------------------------------------------------------------
+//
+//  Module
+//
+// ---------------------------------------------------------------
+
+.form-search {
+	label[for='search'] {
+		display: none;
+	}
+
+	button[type='submit'] {
+		@extend %hide_text;
+		position: absolute;
+		top: 0;
+		right: px2em(10px, 11px);
+		width: px2em(20px, 11px);
+		height: 100%;
+		border: none;
+		background: transparent url(../../img/ico_search.svg) 95% center no-repeat;
+		cursor: pointer;
+
+		&:focus {
+			outline: none;
+			border: none;
+		}
+	}
+
+	#search {
+		@extend %roboto_light;
+		@extend %clarat_rounding_start;
+		@include input-placeholder(rgba($brand_brown, .4), 400);
+		padding: 0 px2em(9px, 18px);
+		width: 100%;
+		height: px2em(40px, 18px);
+		border: none;
+		font-size: px2em(18px);
+		line-height: px2em(40px, 18px);
+
+		&:focus {
+			outline: none;
+			border: none;
+		}
+	}
+}
+
+.form-search__innerwrapper {
+	position: relative;
+	float: left;
+	max-width: 50%;
+}
+

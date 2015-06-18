@@ -1,0 +1,124 @@
+// ---------------------------------------------------------------
+//
+//  Module
+//
+// ---------------------------------------------------------------
+
+.article--teaser {
+	@extend %clearfix;
+	position: relative;
+	padding-top: px2em(28px);
+	border-bottom: 1px solid $brand_white;
+
+	&:first-child {
+		padding-top: 0;
+
+		.article-list__timestamp {
+			top: px2em(8px);
+
+		}
+	}
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.article-list__timestamp {
+//	@extend %robotoslab_bold;
+//	color: $brand_blue;
+	position: absolute;
+	top: px2em(28px);
+	right: 0;
+}
+
+.article__headline {
+	@extend %roboto_bold;
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: 400;
+	font-size: px2em(30px);
+
+	a {
+		color: $brand_brown;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.article--teaser__excerpt {
+	font-size: $base-font-size;
+	line-height: 1.65;
+}
+
+.article__readmore {
+	@extend %roboto_bold;
+	@extend %clarat_rounding_start;
+	@extend %clarat_rounding_end;
+	display: inline-block;
+	float: none;
+	margin: px2em(15px, 14px) 0;
+	padding: px2em(1px, 14px) px2em(7px, 14px);
+	background: $brand_yellow;
+	color: #fff;
+	text-decoration: none;
+	font-size: px2em(14px);
+}
+
+// ---------------------------------------------------------------
+//
+//  Single Article on own page
+//
+// ---------------------------------------------------------------
+
+
+.article__headline {
+  @extend %roboto_bold;
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.article__body {
+//  @extend %robotoslab_regular;
+  margin-bottom: 1.2em;
+  line-height: 1.65;
+}
+
+.article__meta {
+  @extend %robotoslab_regular;
+  color: $brand_blue;
+  text-align: right;
+  font-size: px2em(16px, 18px);
+
+  a {
+    color: inherit;
+  }
+
+  span {
+    @extend %robotoslab_bold;
+  }
+}
+
+a.article__back-to-index {
+	@extend %roboto_bold;
+	@extend %clarat_rounding_start;
+	@extend  %clarat_rounding_end;
+	display: inline-block;
+	margin-bottom: px2em(14px, 14px);
+	text-decoration: none;
+	padding: px2em(5px, 14px) px2em(14px, 14px);
+	border: none;
+	background: $brand_yellow;
+	color: #fff;
+	font-size: px2em(14px);
+	line-height: 1;
+	cursor: pointer;
+}
+
+
+
+

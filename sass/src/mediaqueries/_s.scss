@@ -1,0 +1,47 @@
+@include breakpoint(S) {
+
+	.wrapper-main {
+		margin: 0;
+	}
+
+	.content-main {
+		padding: px2em(25px);
+		border-top-left-radius: 0;
+	}
+
+	.nav-main {
+		width: 100%;
+	}
+
+	.nav-main__select {
+		float: right;
+		width: 49%;
+		margin-left: 0;
+	}
+
+	.form-search {
+		@extend %clearfix;
+		display: inline-block;
+		width: 49%;
+	}
+
+	.form-search__innerwrapper {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.header-main {
+		padding-top: 0;
+		height: px2em(150px);
+		background: $brand_beige url(../../img/body_background.svg) center top no-repeat;
+		background-size: contain;
+	}
+
+	.logo {
+		width: 100%;
+		height: px2em(80px, 28px);
+		background-position: center;
+	}
+
+
+}

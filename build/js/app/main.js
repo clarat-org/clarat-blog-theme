@@ -1,0 +1,1 @@
+!function(){var a={initTabs:function(){$("#tab-container").easytabs({animate:!0,animationSpeed:1})}};$(document).ready(function(){a.initTabs()})}();

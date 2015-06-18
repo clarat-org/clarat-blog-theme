@@ -1,8 +1,13 @@
 // ---------------------------------------------------------------
 //
-//  Module
+//  Comments
 //
 // ---------------------------------------------------------------
+
+.comments {
+	background: $brand_beige;
+	padding: px2em(20px);
+}
 
 .comment-list {
 	counter-reset: li;

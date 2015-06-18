@@ -101,7 +101,7 @@ module.exports = function(grunt) {
 				scssSrc + '**/*.scss',
 				jsSrc + '**/*.js'
 			],
-			tasks: ['sass:dev', 'autoprefixer', 'concat']
+			tasks: ['sass:dist', 'autoprefixer', 'concat']
 		}
 
 	});

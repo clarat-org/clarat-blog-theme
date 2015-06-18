@@ -1,6 +1,6 @@
 // ---------------------------------------------------------------
 //
-//  Module
+//  Search form in header
 //
 // ---------------------------------------------------------------
 
@@ -32,10 +32,10 @@
 		@include input-placeholder(rgba($brand_brown, .4), 400);
 		padding: 0 px2em(9px, 18px);
 		width: 100%;
-		height: px2em(40px, 18px);
+		height: px2em(42px, 18px);
 		border: none;
 		font-size: px2em(18px);
-		line-height: px2em(40px, 18px);
+		line-height: px2em(42px, 18px);
 
 		&:focus {
 			outline: none;

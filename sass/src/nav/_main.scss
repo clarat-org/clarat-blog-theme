@@ -6,6 +6,7 @@
 
 .nav-main {
 	@extend %clarat_rounding_start;
+	position: relative;
 	float: right;
 	box-sizing: border-box;
 	padding: px2em(20px);
@@ -17,13 +18,15 @@
 .nav-main__select {
 	@extend %roboto_regular;
 	@extend %clarat_rounding_end;
+	position: absolute;
+	right: px2em(20px, 18px);
+	top: px2em(24px, 18px);
 	z-index: 200;
-
 	display: inline-block;
 	margin-left: px2em(15px, 18px);
 	padding: 0 px2em(10px, 18px);
 	min-height: px2em(40px, 18px);
-	width: 46%;
+	width: 42%;
 	border: 1px solid $brand_white;
 	background-color: $brand_yellow;
 	color: $brand_white;
@@ -35,8 +38,8 @@
 	}
 
 	li {
-		padding-left: px2em(10px);
 		position: relative;
+		padding-left: px2em(10px);
 		line-height: 1.75;
 
 		&:before {
@@ -48,10 +51,10 @@
 }
 
 .nav-main__list {
+	display: none;
 	margin: 0 0 px2em(10px, 18px);
 	padding: 0;
 	list-style: none;
-	display: none;
 
 	.nav-main__select--expanded & {
 		display: block;

@@ -15,9 +15,10 @@
 
 	.nav-main__select {
 		position: absolute;
-		float: right;
 		margin-left: 0;
-		width: 49%;
+		width: 46%;
+		top: px2em(22px, 18px);
+
 	}
 
 	.form-search {

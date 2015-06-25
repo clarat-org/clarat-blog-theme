@@ -7,10 +7,10 @@
 .content-main {
 	@extend %clarat_rounding_start;
 	@extend %clarat_rounding_end;
-	margin-bottom: px2em(145px, 18px);
-	padding: px2em(40px, 18px) px2em(50px, 18px);
+	margin-bottom: px2em(145px, 16px);
+	padding: px2em(40px, 16px) px2em(50px, 16px);
 	background: rgba($brand_white, .9);
-	font-size: px2em(18px);
+	font-size: px2em(16px);
 	line-height: 1.65;
 
 	a {

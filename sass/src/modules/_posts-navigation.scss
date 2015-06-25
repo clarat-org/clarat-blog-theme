@@ -10,15 +10,29 @@
 
 .posts-navigation {
 	@extend %robotoslab_bold;
-	background: $brand_beige;
+	@extend %clearfix;
 	margin-top: px2em(35px);
 	padding: px2em(15px) px2em(20px);
+	background: $brand_beige;
 
 	a {
+		display: inline-block;
+		width: 50%;
 		color: $brand_brown;
 	}
 
+	.nav-next,
+	.nav-previous {
+		width: 50%;
+	}
+
 	.nav-next {
+		float: left;
+		text-align: left;
+	}
+
+	.nav-previous {
+		float: right;
 		text-align: right;
 	}
 }

@@ -1,0 +1,26 @@
+// ---------------------------------------------------------------
+//
+//  Top banner
+//
+// ---------------------------------------------------------------
+
+.banner {
+	position: fixed;
+	top: px2em(280px, 18px);
+	left: px2em(20px, 18px);
+	height: px2em(50px, 18px);
+	transform: rotate(270deg);
+	transform-origin: 0;
+	z-index: 20;
+}
+
+.banner__link {
+	@extend %roboto_bold;
+	display: inline-block;
+	padding: 0 px2em(20px, 18px);
+	border-radius: 0 0 px2em(12px, 18px) px2em(12px, 18px);
+	background: $brand_orange;
+	color: $brand_white;
+	text-decoration: none;
+	line-height: px2em(40px, 18px);
+}

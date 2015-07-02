@@ -1,3 +1,6 @@
+<div class="banner">
+    <a class="banner__link" href="http://clarat.org" target="_blank">Zum clarat-Portal</a>
+</div>
 <div class="wrapper-main">
     <header class="header-main">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><h1 class="logo"><?php bloginfo( 'name' ); ?></h1></a>

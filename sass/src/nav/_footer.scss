@@ -9,7 +9,7 @@
 	margin: 0 auto;
 	padding: px2em(6px, 13px);
 	font-size: px2em(13px);
-	width: px2em($main_container_width, 13px);
+	max-width: px2em($main_container_width, 13px);
 
 	a {
 		color: inherit;

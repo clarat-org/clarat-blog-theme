@@ -1,5 +1,10 @@
         </main>
     </div>
+        <div class="footer-main">
+            <nav class="nav-footer">
+                    <?php wp_nav_menu(['menu' => 'Fussmenü', 'menu_class' => 'nav-footer__list']); ?>
+            </nav>
+        </div>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/build/js/app.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

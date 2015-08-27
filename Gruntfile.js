@@ -116,6 +116,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-newer');
   	grunt.loadNpmTasks('grunt-notify');
 
-	grunt.registerTask('default', ['watch']);
+	grunt.registerTask('default', ['sass:dist', 'autoprefixer', 'concat', 'watch']);
 
 };
